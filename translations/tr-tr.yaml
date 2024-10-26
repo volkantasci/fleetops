@@ -1,0 +1,1666 @@
+fleet-ops:
+  extension-name: Fleet-Ops
+  common:
+    active-manpower: Aktif İş Gücü
+    address: Adres
+    amount: Miktar
+    assignee: Atanan Kişi
+    avatar: Avatar
+    building: Bina
+    bulk-action: Toplu İşlem
+    cancel: İptal
+    category: Kategori
+    city: Şehir
+    coordinates: Koordinatlar
+    cost: Maliyet
+    code: Kod
+    country: Ülke
+    config: Yapılandırma
+    created-at: Oluşturulma Tarihi
+    date-created: Oluşturulma Tarihi
+    delete: Sil
+    destination: Varış Noktası
+    details: Detaylar
+    description: Açıklama
+    distance: Mesafe
+    driver-license: Sürücü Belgesi
+    driver: Sürücü
+    edit: Düzenle
+    email: E-posta
+    export: Dışa Aktar
+    fleet: Filo
+    height: Yükseklik
+    host: Sunucu
+    id: ID
+    internal-id: Dahili ID
+    item: Öğe
+    key: Anahtar
+    label: Etiket
+    length: Uzunluk
+    license: Lisans
+    loading: Yükleniyor...
+    loading-resource: "{resourceName} yükleniyor..."
+    make: Marka
+    manage-message: Tedarikçilerinizi yönetin
+    manpower: İş Gücü
+    model: Model
+    name: İsim
+    namespace: Ad Alanı
+    neighborhood: Mahalle
+    new: Yeni
+    odometer: Kilometre Sayacı
+    options: Seçenekler
+    orders: Siparişler
+    parent-fleet: Üst Filo
+    phone: Telefon
+    photos: fotoğraflar
+    plate-number: Plaka numarası
+    postal-code: Posta kodu
+    priority: Öncelik
+    reload: Yenile
+    reload-data: Verileri yenile
+    remove: Kaldır
+    reporter: Raporlayan
+    sandbox: Test Ortamı
+    save-changes: Değişiklikleri kaydet
+    schedule: Program
+    search: Ara
+    security-access-code: Güvenlik erişim kodu
+    service-area: Hizmet alanı
+    service: Hizmet
+    state: Eyalet/İl
+    status: Durum
+    street-1: Sokak 1
+    street-2: Sokak 2
+    street: Sokak
+    task: Görev
+    title: Başlık
+    type: Tür
+    unit: Birim
+    updated-at: Güncellenme Tarihi
+    upload-new: Yeni yükle
+    uploading: Yükleniyor...
+    value: Değer
+    vehicle: Araç
+    vendor: Tedarikçi
+    vin-number: VIN Numarası
+    volume: Hacim
+    weight: Ağırlık
+    website-url: Web Sitesi URL'si
+    website: Web Sitesi
+    width: Genişlik
+    year: Yıl
+    zone: Bölge
+    total: Toplam
+    back: Geri
+    done: Tamamlandı
+    tracking: Takip Numarası
+    customer: Müşteri
+    vehicle-name: Araç Adı
+    pickup: Alım
+    dropoff: Bırakma
+    import: İçe Aktar
+    order: Sipariş
+    create-order: Sipariş Oluştur
+    dispatch-order: Siparişi Sevk Et
+  widget:
+    key-metrics:
+      title: Filo Operasyonları Metrikleri
+      earnings: Kazançlar
+      fuel-expenses: Yakıt Maliyetleri
+      traveled: Kat Edilen Mesafe
+      total-time: Toplam Süre
+      order-scheduled: Planlanmış Siparişler
+      order-completed: Tamamlanan Siparişler
+      order-progress: Devam Eden Siparişler
+      order-canceled: İptal Edilen Siparişler
+      driver-online: Çevrimiçi Sürücüler
+      customers: Müşteriler
+      open-issue: Açık Sorunlar
+      closed-issues: Çözülmüş Sorunlar
+    live-order-map:
+      loading: Devam eden siparişler yükleniyor...
+      assigned: Sürücü Atandı
+      no-order: Devam eden sipariş yok
+      message: Siparişler devam ederken bu widget'ta gerçek zamanlı aktivite gösterilecektir.
+    recent-orders:
+      title: Son Siparişler
+      loading: Son siparişler yükleniyor...
+      no-orders: Bu hafta için sipariş yok
+      message-part-1: Bu hafta hiç sipariş olmadı, hareketi başlatmak için
+      message-part-2: yeni bir sipariş oluşturun
+      message-part-3: veya müşterilerinizin API üzerinden sipariş vermesine izin verin.
+    transactions:
+      title: Son İşlemler
+      loading: Son işlemler yükleniyor...
+      no-transactions: Bu hafta işlem yok
+      message: Siparişler servis ücretleriyle devam ederken, Fleetbase işlemleri otomatik olarak takip eder.
+  component:
+    activity-logic-builder:
+      activity-logic: Aktivite Mantığı
+      activity-logic-help-text: Bir aktivitenin iş akışında ne zaman kullanılabilir olacağını belirleyen özel mantık koşullarını tanımlayın. Bu özellik, her aktivitenin yalnızca önceden tanımlanmış koşulları karşılandığında tetiklenmesini sağlayarak akışı özel kriterlere göre uyarlamanıza olanak tanır.
+      activity-logic-add-logic-help-text: Bir aktivitenin ne zaman etkinleştirileceğini tanımlayacak yeni bir koşul seti oluşturun. Yeni bir mantık kuralı oluşturmaya başlamak için buna tıklayın.
+      activity-logic-select-logic-type-help-text: Bu koşulun izleyeceği mantık türünü seçin. Doğrudan bir koşul için 'If', bileşik koşullar için 'And'/'Or' veya bir koşulu olumsuzlamak için 'Not' seçin.
+      activity-logic-add-condition-help-text: Bu mantık seti içinde karşılanması gereken belirli bir gereksinim ekleyin. Aktivitenin kullanılabilirliğini kontrol eden ek kriterler belirlemek için bunu kullanın.
+      field: Alan
+      value: Değer
+      add-logic: Mantık Ekle
+    activity-event-selector:
+      activity-events: Aktivite Olayları
+      activity-events-select-to-fire: Bu aktivite gerçekleştiğinde hangi olayların etkinleştirileceğini seçin.
+      activity-events-select-events-info: Bu aktiviteye yanıt olarak tetiklemek istediğiniz belirli olayı seçin.
+      select-event-to-add: Eklenecek olayı seçin...
+    custom-field-form-panel:
+      meta-col-span: 'Meta: Sütun Genişliği'
+      col-span-size: Sütun Genişliği Boyutu
+      custom-field-title-concat: 'Özel Alan: '
+      new-custom-field: Yeni özel alan
+      close-new-custom-field: Özel alan değişikliklerini iptal et
+      save-custom-field: Değişiklikleri Kaydet
+      create-custom-field: Yeni Alan Oluştur
+      field-name: Alan Adı
+      field-label: Alan Etiketi
+      field-type: Alan Türü
+      select-field-type: Alan türü seçin...
+      field-description: Alan Açıklaması
+      field-help-text: Alan Yardım Metni
+      field-default-value: Alan Varsayılan Değeri
+      field-is-required: Alan Zorunlu
+      field-is-editable: Alan Düzenlenebilir
+      field-options: Alan Seçenekleri
+      field-validation-rules: Alan Doğrulama Kuralları
+      field-model-type: Alan Model Türü
+      field-select-model-type: Model türü seçin
+      add-new-option: Yeni seçenek ekle
+    activity-form-panel:
+      title-concat: 'Aktivite: '
+      new-activity-title: Yeni aktivite oluştur
+      key: Anahtar
+      code: Kod
+      status: Durum
+      details: Detaylar
+      proof-of-delivery: Teslimat Kanıtı
+      require-pod: Teslimat Kanıtı Gerektirir
+      require-pod-help-text: Bu aktivite, siparişe uygulanmadan önce bir kanıt oluşturulmasını gerektirir.
+      select-pod-method: Teslimat Kanıtı Yöntemi
+      pod-method-placeholder: Teslimat Kanıtı Yöntemi Seçin
+      completes-order: Siparişi Tamamlar
+      complete: Tamamla
+      key-help: "Programatik karar verme için kullanılan bir anahtar girin. Bu anahtar, aynı tanımlayıcıya sahip bir veya birkaç aktiviteyi temsil edebilir. Not: Bu anahtarın benzersiz olması gerekmez."
+      code-help: Bu aktiviteye özel benzersiz bir tanımlayıcı girin.
+      status-help: Bu aktivite tetiklendiğinde son kullanıcıya gösterilecek durumu belirtin.
+      details-help: Son kullanıcının anlaması için aktivitenin detaylı bir açıklamasını sağlayın.
+    custom-entity-issue-form-panel: 
+        new-custom-entity: Yeni Özel Varlık
+        name: İsim
+        description: Açıklama
+        details: Detaylar
+        type: Tür
+        length: Uzunluk
+        width: Genişlik
+        height: Yükseklik
+        weight: Ağırlık
+        entity-image: Varlık Görseli
+        measurements: Ölçümler
+    order-config-manager:
+      title: Sipariş Yapılandırmaları
+      message: Sipariş yapılandırmaları, farklı sipariş türlerinin nasıl yürütülmesi gerektiğini Fleetbase'e söyleyecek dinamik yapılandırmalar tanımlamanıza olanak tanır.
+      configuration: Yapılandırma
+      new-order-config: Yeni Sipariş Yapılandırması
+      select-order-config: Sipariş Yapılandırması Seç
+      create-new-title: Yeni bir sipariş yapılandırması oluştur
+      create-warning-message: Sipariş yapılandırması bir isim gerektirir
+      create-success-message: Yeni sipariş yapılandırması başarıyla oluşturuldu.
+      no-order-config-selected: Sipariş yapılandırması seçilmedi.
+      saved-success-message: '{orderConfigName} yapılandırması kaydedildi.'
+      cloned-success-message: Sipariş yapılandırması başarıyla kopyalandı.
+      enter-clone-name: Kopyalanan yapılandırmanın adını girin
+      no-config-name-warning-message: Yapılandırma adı girilmedi.
+      delete-warning-message: Bu sipariş yapılandırması silindikten sonra artık bunu kullanarak sipariş oluşturamazsınız. Emin misiniz?
+      uninstall-order-config: Yapılandırmayı Kaldır
+      uninstall-order-config-success-message: Eklenti {extensionName} kaldırıldı.
+      select-order-config-to-start: Başlamak için bir sipariş yapılandırması seçin veya oluşturun.
+      details:
+        details: Detaylar
+        name: İsim
+        description: Açıklama
+        tags: Etiketler
+        add-tags: Etiket Ekle
+        key: Anahtar
+        version: Versiyon
+        namespace: Ad Alanı
+        controls: Kontroller
+        delete-config: Yapılandırmayı Sil
+        delete:
+          delete-title: Bu sipariş yapılandırması silinsin mi?
+          delete-body-message: Bu sipariş yapılandırması silindikten sonra kurtarılamaz ve tüm yapılandırmaları kaybedersiniz.
+          confirm-delete: Sil
+      activity-flow:
+        save-activity-flow: Aktivite Akışını Kaydet
+        edit-activity-unique-code-warning: Aktivite kodu benzersiz olmalıdır!
+      custom-fields:
+        new-field-group: Yeni alan grubu
+        new-custom-field: Yeni özel alan oluştur
+        grid-size: Izgara Boyutu
+        delete-custom-field-prompt:
+          modal-title: Bu özel alan silinsin mi?
+          delete-body-message: Bu özel alan silindikten sonra kurtarılamaz ve tüm yapılandırmaları kaybedersiniz.
+          confirm-delete: Sil
+        delete-custom-field-group-prompt:
+          modal-title: Bu alan grubu silinsin mi?
+          delete-body-message: Bu alan grubu silindikten sonra kurtarılamaz ve içindeki tüm özel alanları kaybedersiniz.
+          confirm-delete: Sil
+      entities: 
+        new-custom-entity: Yeni Özel Varlık
+        name: İsim
+        description: Açıklama
+        type: Tür
+        length: Uzunluk
+        width: Genişlik
+        height: Yükseklik
+        weight: Ağırlık
+        delete-custom-entity-title: Bu özel varlık silinsin mi?
+        delete-custom-entity-body: Bu özel varlık silindikten sonra kurtarılamaz ve tüm yapılandırmaları kaybedersiniz.
+        confirm-delete: Onayla
+      types:
+        no-order-installed: Hiç sipariş yapılandırması yüklü değil!
+        you-have-no-configs: Şu anda yüklü sipariş yapılandırmanız yok, başlamak için eklentilerden bir sipariş yapılandırması yükleyin.
+        view-extensions: Eklentileri görüntüle
+    avatar-picker:
+      avatar: Avatar
+      select-map-avatar: Harita avatarı seç
+      select-avatar-rendering: Konum takibi özelliklerini kullanırken haritalarda gösterilecek bir avatar seçin.
+      select-avatar: Avatar seç
+    admin:
+      navigator-app:
+        title: Navigator Uygulaması
+        name: Örnek Bağlantı URL'si
+        message: Bu URL'yi resmi Navigator uygulamasını bu {companyName} örneğine bağlamak için kullanın. Bu URL'yi mobil cihazda açmak Navigator uygulamasını açacak ve yapılandırmasını ve markalamasını güncelleyecektir.
+        settings: Varlık Ayarları
+        select-input: Sürücünün varlık detaylarını güncellemesine izin ver
+        driver-settings: Sürücü Ayarları
+        description: Sürücü kaydını etkinleştir
+        upload-document: Sürücünün belge yüklemesini gerekli kıl
+        upload-body: Belge ekle
+        document: Belge
+      visibility-controls:
+        title: Görünürlük Kontrolleri
+        message: Görünürlük kontrolleri Fleet-Ops'un bölümlerini devre dışı bırakmanıza olanak tanır. Fleet-ops'ta bölümleri gizlemek için onay kutusunu açın veya kapatın.
+        checkbox-text: Bu bölümün Fleet-Ops'taki görünürlüğünü etkinleştirin veya devre dışı bırakın.
+      avatar-management:
+        upload-avatar: Avatar Yükle
+        view-avatar: Avatar Görüntüle
+        vehicles: Araçlar
+        drivers: Sürücüler
+        places: Yerler
+    entity-field-editing-settings:
+      entitiy-field-editing-settings: Varlık Alanı Düzenleme Ayarları
+      entity-field-editing-settings-help-text: Bu ayarlar, bir varlığın hangi alanlarının Navigator Uygulaması üzerinden bir sürücü tarafından düzenlenebileceğini belirler
+      select-order-config: Sipariş Yapılandırması Seç
+      select-order-config-help-text: Bu ayarların uygulanacağı bir sipariş yapılandırması seçin
+      enable-driver-to-edit-entity-fields: Sürücünün varlık detaylarını düzenlemesine izin ver
+      enable-driver-to-edit-entity-fields-help-text: Bu düğmeyi etkinleştirmek, sürücüye aşağıda seçilen belirli varlık alanlarını değiştirme izni verir.
+    driver-onboard-settings:
+      driver-onboard-settings: Sürücü Kayıt Ayarları
+      enable-driver-onboard-from-app: Navigator Uygulamasından sürücü kaydını etkinleştir
+      enable-driver-onboard-from-app-help-text: Bu ayarı etkinleştirmek, sürücülerin Navigator Uygulaması üzerinden bağımsız olarak kayıt olmalarına (kendi hesaplarını oluşturmalarına) olanak tanır.
+      select-onboard-method: Sürücü kayıt yöntemini seç
+      select-onboard-method-help-text: Bu ayar, sürücülerin Navigator Uygulaması üzerinden hesaplarını nasıl oluşturabileceklerini belirler. Sürücülerin hesaplarını oluşturmak için bir e-posta daveti almaları gerekiyorsa 'Davet'i seçin. Herkesin sürücü hesabı oluşturmasına izin veren bir düğmeyi uygulama içinde etkinleştirmek istiyorsanız 'Düğme'yi seçin.
+      require-driver-to-upload-onboard-documents: Sürücünün kayıt belgelerini yüklemesini zorunlu kıl
+      require-driver-to-upload-onboard-documents-help-text: Bu ayar, bir sürücünün hesabı oluşturulmadan önce sağlaması gereken belgeleri zorunlu kılar.
+      required-onboard-documents: Gerekli kayıt belgeleri
+      required-onboard-documents-help-text: '"Kayıt belgesi ekle" düğmesini kullanarak sürücünün sağlaması gereken tüm kayıt belgelerini aşağıya girin.'
+      enter-document-name: Belge adını girin
+      add-onboard-document: Kayıt belgesi ekle
+    cell:
+      driver-name:
+        not-assigned: Sürücü atanmadı
+    fleet-panel:
+      details:
+        active-manpower: Aktif İş Gücü
+      driver-listing:
+        search-driver: Filodaki sürücüleri ara
+        add-driver: Filoya sürücü ekle
+        loading-driver: Filo sürücüleri yükleniyor...
+      vehicle-listing:
+        search-vehicle: Filodaki araçları ara
+        add-vehicle: Filoya araç ekle
+        loading-vehicle: Filo araçları yükleniyor...
+    layout:
+      fleet-ops-sidebar:
+        payments: Ödemeler
+        navigator-app: Navigator Uygulaması
+        resources: Kaynaklar
+        operations: Operasyonlar
+        dashboard: Kontrol Paneli
+        service-rates: Servis Ücretleri
+        scheduler: Programlayıcı
+        drivers: Sürücüler
+        vehicles: Araçlar
+        fleets: Filolar
+        vendors: Tedarikçiler
+        contacts: Kişiler
+        places: Yerler
+        fuel-reports: Yakıt Raporları
+        issues: Sorunlar
+        title: Yeni sipariş oluştur
+        settings: Ayarlar
+        order-config: Sipariş Yapılandırması
+    live-map-drawer:
+      driver-listing:
+        location: Konum
+        current-job: Mevcut İş
+        last-seen: Son Görülme
+        view-driver: Sürücü detaylarını görüntüle...
+        edit-driver: Sürücüyü düzenle...
+        locate-driver: Sürücüyü bul...
+        delete-driver: Sürücüyü sil...
+        warning-message: Sürücü bulunamadı.
+        message: Sürücüleri anahtar kelimeye göre filtrele...
+      place-listing:
+        location: Konum
+        place: Yer
+        view-place: Yer detaylarını görüntüle...
+        edit-place: Yeri düzenle...
+        locate-place: Yeri bul...
+        delete-place: Yeri sil...
+        warning-message: Yer bulunamadı.
+        message: Yerleri anahtar kelimeye göre filtrele...
+      vehicle-listing:
+        location: Konum
+        last-seen: Son Görülme
+        view-vehicle: Araç detaylarını görüntüle...
+        edit-vehicle: Aracı düzenle...
+        locate-vehicle: Aracı bul...
+        delete-vehicle: Aracı sil...
+        warning-message: Araç bulunamadı.
+        message: Araçları anahtar kelimeye göre filtrele...
+    map-container:
+      visibility-control-panel:
+        title: Görünürlük Kontrolleri
+        hide-places: Tüm yerleri gizle...
+        show-places: Tüm yerleri göster...
+        vehicles: Araçlar
+        vehicle-controls: Araç Görünürlük Kontrolleri...
+        hide-vehicles: Tüm araçları gizle...
+        show-vehicles: Tüm araçları göster...
+        online-vehicles: Sadece çevrimiçi araçları göster...
+        offline-vehicles: Sadece çevrimdışı araçları göster...
+      zones-panel:
+        title: Hizmet Alanları
+        create-service: Yeni hizmet alanı oluştur...
+        show: Tüm hizmet alanlarını göster
+        hide: Tüm hizmet alanlarını gizle
+        action: İşlemler...
+        focus: Odaklan
+        blur: Hizmet alanını gizle...
+        create-zone: İçinde bölge oluştur...
+      toolbar:
+        create: Sipariş Oluştur
+        view-order: Siparişleri Görüntüle
+        view-service-area: Hizmet Alanlarını Görüntüle
+        visibility: Görünürlük Kontrolleri
+        scope: Kapsam
+    modals:
+      new-custom-field-group:
+        modal-title: Yeni bir özel alan grubu oluştur
+        group-name: Grup Adı
+      assign-driver:
+        select-driver: Sürücü Seç
+        select-assign: Atanacak Sürücüyü Seç
+      clone-config-form:
+        name: Yapılandırma Adı
+        description: Yapılandırma Açıklaması
+      driver-assign-order:
+        order: Sipariş Seç
+        assign-order: Atanacak Siparişi Seç
+      driver-assign-vehicle:
+        vehicle: Araç Seç
+        assign-vehicle: Atanacak Aracı Seç
+      driver-assign-vendor:
+        vendor: Tedarikçi Seç
+      driver-details:
+        job: Mevcut İş
+        view: Haritada görüntüle
+      driver-form:
+        select-vendor: Tedarikçi Seç
+        select-vehicle: Araç Seç
+      edit-meta-form:
+        add: Meta alan ekle
+      entity-form:
+        name-text: Öğe veya varlığın adı.
+        id-text: Varlık için isteğe bağlı olarak özel bir tanımlayıcı veya dahili tanımlayıcı ayarlamak için bu alanı kullanın.
+        sku: SKU
+        sku-text: Varsa stok tutma birimi numarası.
+        description: Açıklama
+        description-text: Varlığın ek açıklama metni.
+        price-title: Fiyatlandırma ve Değer
+        price: Fiyat
+        price-text: Varlığın fiyatı.
+        sale-price: Satış Fiyatı
+        sale-price-text: Varlığın satış fiyatı veya indirimli fiyatı.
+        declare: Beyan Edilen Değer
+        declare-text: Varlığın beyan edilen değeri, sigortalanabilir olması durumunda faydalıdır.
+        measurement-title: Ölçüler ve Ağırlık
+        length: Uzunluk
+        length-text: Varlığın uzunluğu.
+        width: Genişlik
+        width-text: Varlığın genişliği.
+        height: Yükseklik
+        height-text: Varlığın yüksekliği.
+        weight: Ağırlık
+        weight-text: Varlığın ağırlığı.
+      entity-meta-field-prompt:
+        name: Meta Alan Anahtarı
+      fleet-form:
+        title: Filo Adı
+        assign: Hizmet Alanına Ata
+        assign-text: Filonun atanacağı hizmet alanını seçin
+        zone: Bölgeye Ata
+        zone-text: Filonun atanacağı bölgeyi seçin
+        task: Görev/Misyon
+        task-text: Varsa bu filonun birincil görev veya misyonunun bir açıklamasını verin.
+        select-task: Görev seç
+        status-text: Filonun durumunu seçin.
+        select-status: Durum seç
+      fuel-report-details:
+        fuel: Yakıt/Hacim
+      fuel-report-form:
+        select-driver: Sürücü Seç
+        select-vehicle: Araç Seç
+        volume: Hacim
+        volume-text: Raporlanacak yakıtın metrik birimini ve hacmini seçin.
+      group-details:
+        name: Grup Adı
+        member: Üyeler
+        address: Adres
+      group-form:
+        title: Grup Adı
+        users-add: Gruba eklenecek kullanıcıları seç
+        search: Gruba eklenecek kullanıcıları ara ve seç.
+        select-user: Gruba eklenecek kullanıcıyı seç
+        no-users: Gruba kullanıcı eklenmedi
+      install-prompt:
+        message: "{extensionName} eklentisini yüklemeye çalışıyorsunuz. Bu yüklemeye devam etmek istediğinizden emin misiniz?"
+        sub-message: Bazı eklentiler kaynaklarınıza erişim gerektirir.
+      issue-details:
+        assigned: Atanan Kişi
+        type: Sorun Türü
+        category: Sorun Kategorisi
+      issue-form:
+        reported: Raporlayan
+        select-reporter: Raporlayan Seç
+        assigned: Atanan Kişi
+        select-assignee: Atanacak Kişiyi Seç
+        select-driver: Sürücü Seç
+        select-vehicle: Araç Seç
+        select-type: Tür Seç
+        select-category: Kategori Seç
+        type: Sorun Türü
+        type-text: Sorun türünü seç
+        category: Sorun Kategorisi
+        category-text: Sorun kategorisini seç
+        report: Sorun Raporu
+        tags: Sorun etiketleri
+        add-tags: Etiket ekle
+        select-status: Sorun durumunu seç
+      map-layer-form:
+        layer-type: Katman Türü
+        layer-type-text: Oluşturmak istediğiniz katman türünü seçin.
+        select-layer-type: Katman türü seçin...
+        service-area: Hizmet Alanı
+        service-area-text: Bu Bölgeye atanacak Hizmet Alanını seçin.
+        select-service-area: Filoya atanacak hizmet alanını seçin
+        set-name: "{options} için bir görüntüleme adı belirleyin."
+        service-type: Hizmet Alanı Türü
+        service-type-text: Bu hizmet alanı için tür tanımını seçin.
+        select-service-type: Hizmet alanı türünü seçin...
+        customize-border: Bu {options} için kenarlık rengini özelleştirin.
+        customize-fill-color: Bu {options} için dolgu rengini özelleştirin.
+        service-area-country: Hizmet Alanı Ülkesi
+        service-area-country-text: İsteğe bağlı olarak bu Hizmet Alanının bulunduğu veya bağlı olduğu ülkeyi ayarlayın.
+
+      new-order-config:
+        name: Yapılandırma Adı
+        description: Yapılandırma Açıklaması
+        tags: Yapılandırma Etiketleri
+        add-tags: Etiket ekle
+
+      order-assign-driver:
+        select-driver: Sürücü Seç
+        select-assign: Atanacak Sürücüyü Seç
+
+      order-config-new-status:
+        new-status: Yeni Durum
+        status-text: Akışa eklenecek yeni bir aktivite durumu girin
+
+      order-event:
+        schedule: Programla
+        unschedule: Programı İptal Et
+
+      order-form:
+        id-text: Sipariş için isteğe bağlı olarak özel bir tanımlayıcı veya dahili tanımlayıcı ayarlamak için bu alanı kullanın.
+        schedule-text: Siparişin sevk edileceği tarih ve saat. Sevk zamanında sürücü atanmamışsa, sevkiyat başarısız olur. Sipariş Ad-Hoc ise, sipariş alım noktası çevresindeki sürücülere bildirilecektir.
+        customer: Müşteri
+        customer-text: İsteğe bağlı olarak bu siparişin müşterisini atayın. Yeni bir müşteriyse, yukarıdaki 'Yeni Müşteri' düğmesini kullanın.
+        select-customer: Müşteri Seç
+        facilitator: Kolaylaştırıcı
+        facilitator-text: İsteğe bağlı olarak bu sipariş için bir kolaylaştırıcı atayın, kolaylaştırıcı bu siparişin taşınmasını kolaylaştıracak bir 3. taraf yüklenici veya hizmet olabilir.
+        select-facilitator: Kolaylaştırıcı Seç
+        assign-driver: Sürücü Ata
+        assign-driver-text: Bu siparişin sevk edileceği sürücüyü atayın.
+        select-driver: Sürücü Seç
+        assign-vehicle: Araç Ata
+        assign-vehicle-text: Bu siparişin gerçekleştirileceği aracı atayın.
+        select-vehicle: Araç Seç
+
+      order-import:
+        loading-message: İçe aktarma işlemi devam ediyor...
+        drop-upload: Yüklemek için bırakın
+        invalid: Geçersiz
+        ready-upload: yüklemeye hazır.
+        upload-spreadsheets: E-tablo Dosyaları Yükle
+        drag-drop: E-tablo dosyalarını bu bölgeye sürükleyip bırakın
+        button-text: veya yüklenecek e-tabloları seçin
+        spreadsheets: e-tablolar
+        upload-queue: Yükleme Kuyruğu
+
+      order-label:
+        loading: Etiket Yükleniyor...
+
+      order-new-activity:
+        select-message: Sipariş takip aktivitesini güncellemek için bir aktivite durumu seçin veya özel bir aktivite girin.
+        order-currently-message: Bu sipariş şu anda {options} durumunda, ek aktivite bu durumun üzerine yazacaktır.
+        not-recommend-message: Ne yaptığınızdan kesinlikle emin değilseniz Fleetbase bunu önermez.
+        activity-options: Aktivite Seçenekleri
+        activity: aktivite
+        dispatch: Bu, siparişin sevk edilmesini tetikleyecektir.
+        status: Özel aktivite durumu
+        details: Özel aktivite detayları
+        code: Özel aktivite kodu
+        fleetbase-message: Ne yaptığınızdan kesinlikle emin değilseniz Fleetbase bunu önermez.
+
+      order-route-form:
+        toggle: Çoklu Teslimat Noktalarını Aç/Kapat
+        optimize: Rotayı Optimize Et
+        optimize-text: Fleetbase rotayı otomatik olarak optimize edecektir.
+        add: Ara Nokta Ekle
+        add-text: Bu sipariş için daha fazla durak eklemek için 'Ara Nokta Ekle' düğmesini kullanın. Fleetbase rota motoru, her durak eklendiğinde veya kaldırıldığında rotayı otomatik olarak optimize edecektir.
+        select-waypoint: Ara Nokta Seç
+        pickup: Alım
+        edit-address: Adresi Düzenle
+        select-pickup: Alım Noktası Seç
+        invalid: Geçersiz koordinatlar!
+        dropoff: Teslimat
+        select-dropoff: Teslimat Noktası Seç
+        return: Dönüş
+        select-return: Dönüş Noktası Seç
+      place-assign-vendor:
+        select-vendor: Tedarikçi Seç
+
+      place-details:
+        view: Haritada görüntüle
+
+      policy-form:
+        name: Politika Adı
+        name-text: Politikanız için bir ad girin
+        description: Politika Açıklaması
+        description-text: Politikanız için bir açıklama girin
+        permissions: İzinleri Seç
+
+      role-form:
+        name: Rol adı
+        name-text: Bu rol için bir ad girin
+        permissions: İzinleri Seç
+
+      select-payment-method:
+        card-ending: "{method} ile biten kart"
+
+      service-area-form:
+        name: Hizmet Alanı Adı
+        name-text: Hizmet alanı için bir görüntüleme adı belirleyin.
+        type: Hizmet Alanı Türü
+        type-text: Bu hizmet alanı için tür tanımını seçin.
+        select-type: Hizmet alanı türünü seçin...
+        border-color: Hizmet Alanı Kenarlık Rengi
+        customize-border-color: Bu hizmet alanı için kenarlık rengini özelleştirin.
+        area-color: Hizmet Alanı Rengi
+        customize-area-color: Bu hizmet alanı için dolgu rengini özelleştirin.
+        country: Hizmet Alanı Ülkesi
+        country-text: İsteğe bağlı olarak bu hizmet alanının bulunduğu veya bağlı olduğu ülkeyi ayarlayın.
+
+      set-password:
+        message: Fleetbase'e hoş geldiniz! Başlamadan önce, devam etmek için yeni bir şifre belirleyin.
+        new-password: Yeni Şifre
+        confirm-password: Şifreyi Onayla
+        help-text: Devam etmek için en az 8 karakterli bir şifre girin.
+
+      uninstall-prompt:
+        message: '"{options}" eklentisini kaldırmaya çalışıyorsunuz. Bu kaldırma işlemine devam etmek istediğinizden emin misiniz?'
+        sub-message: Tüm yapılandırma ve özelleştirilmiş ayarlar kaybolacaktır.
+
+      vehicle-details:
+        make: Marka
+        model: Model
+        year: Yıl
+        driver-assigned: Atanan Sürücü
+        no-driver-assigned: Sürücü atanmadı
+        vehicle-assigned: Atanan Araç
+        no-vehicle-assigned: Araç atanmadı
+        avatar: Avatar
+        model-information: Model Bilgileri
+        acceleration: 0'dan 100 Km/s'ye
+        body: Gövde
+        doors: Kapılar
+        length: Uzunluk (mm)
+        seats: Koltuklar
+        top-speed: Maksimum Hız (km/s)
+        transmission: Şanzıman Tipi
+        weight: Ağırlık (kg)
+        wheelbase: Aks Mesafesi (mm)
+        width: Genişlik (mm)
+        engine-information: Motor Bilgileri
+        engine-bore: Motor Çapı (mm)
+        cc: Motor Hacmi
+        compression: Sıkıştırma
+        cylinder: Silindir
+        position: Konum
+        power-ps: Güç (ps)
+        power-rpm: Güç (rpm)
+        stroke: Strok (mm)
+        torque-nm: Tork (nm)
+        torque-rpm: Tork (rpm)
+        valves: Silindir Başına Supap
+        fuel-information: Yakıt Bilgileri
+        fuel: Yakıt
+        fuel-cap: Yakıt Deposu (l)
+        liters-city: Şehir İçi Km Başına Litre
+        liters-highway: Otoyol Km Başına Litre
+        liters-mixed: Karma Km Başına Litre
+
+      vehicle-form:
+        map-avatar: Harita avatarı seç
+        map-avatar-text: Konum takibi özelliklerini kullanırken haritalarda gösterilecek bir avatar seçin.
+        select-avatar: Avatar seç
+        make: Araç Markası
+        model: Araç Modeli
+        year: Araç Yılı
+        select-driver: Sürücü Seç
+        body: Araç Gövde Tipi
+        doors: Kapı Sayısı
+        type: Araç Sürüş Tipi
+        length: Araç Uzunluğu (mm)
+        seats: Koltuk Sayısı
+        top-speed: Araç Maksimum Hızı (km/s)
+        transmission: Araç Şanzıman Tipi
+        weight: Araç Ağırlığı (kg)
+        wheelbase: Araç Aks Mesafesi (mm)
+        width: Araç Genişliği (mm)
+        engine-bore: Motor Çapı (mm)
+        cc: Motor Hacmi
+        compression: Motor Sıkıştırma Oranı
+        cylinder: Motor Silindir Sayısı
+        position: Motor Konumu
+        power-ps: Motor Gücü (ps)
+        power-rpm: Motor Gücü (rpm)
+        stroke: Strok Uzunluğu (mm)
+        torque-nm: Motor Torku (nm)
+        torque-rpm: Motor Torku (rpm)
+        fuel-type: Yakıt Tipi
+        fuel-cap: Yakıt Deposu Hacmi (L)
+
+      vendor-details:
+        sandbox: Test Ortamı
+        host: Sunucu
+        namespace: Ad Alanı
+
+      vendor-form:
+        choose-vendor: Entegre Tedarikçi Seç
+        create-vendor: Özel Tedarikçi Oluştur
+        credentials: Kimlik Bilgileri
+        options: Seçenekler
+        hide-advanced: Gelişmiş Seçenekleri Gizle
+        show-advanced: Gelişmiş Seçenekleri Göster
+        custom-host: Özel Sunucu
+        host-text: İsteğe bağlı olarak bu entegrasyon için kullanılacak özel bir sunucu sağlayın.
+        custom-namespace: Özel Ad Alanı
+        namespace-text: İsteğe bağlı olarak entegrasyon için kullanılacak özel bir ad alanı veya API versiyonu sağlayın.
+        webhook: Webhook URL'si
+        webhook-text: Entegre tedarikçiler genellikle Fleetbase'in sipariş üzerindeki aktivite güncellemelerini alabilmesi için bunu gerektirir. Ne yaptığınızı bilmiyorsanız değiştirmeyin! Değiştirmek sipariş güncellemelerinizi bozabilir!
+        cancel-credentials: Kimlik bilgileri sıfırlamayı iptal et
+        reset-message: Hassas kimlik bilgileri yalnızca sıfırlanabilir, kimlik bilgilerini güncellemek için yeniden girmeniz gerekir.
+        optionally: İsteğe bağlı olarak kendi
+        configure-vendor: bu tedarikçiyi yapılandırmak için.
+        select: Seç
+        sandbox: Test Ortamı
+        name-text: Tedarikçinin adı, genellikle bir işletmenin adı.
+        email-text: Tedarikçinin e-postası, bu tedarikçiye e-posta göndermek için kullanılabilir.
+        phone-text: Tedarikçinin telefon numarası, bu tedarikçiye SMS veya mesaj göndermek için kullanılabilir.
+        website-text: Tedarikçinin web sitesi, isteğe bağlı olarak referans için tedarikçinin web sitesini ekleyin.
+        select-address: Adres Seç
+      zone-form:
+        name: Bölge Adı
+        name-text: Bölge için bir görüntüleme adı belirleyin.
+        border-color: Bölge Kenarlık Rengi
+        customize-border: Bu bölge için kenarlık rengini özelleştirin.
+        zone-color: Bölge rengi
+        customize-fill-color: Bu bölge için dolgu rengini özelleştirin.
+        optionally: İsteğe bağlı olarak bölgeye bir açıklama verin.
+        description-zone: Bölge Açıklaması
+
+    order:
+      header:
+        dispatched-order: "{order} tarihinde sevk edildi"
+        dispatched: Sevk Edildi
+        dispatched-at: Sevk Tarihi
+        edit: Detayları Düzenle
+        update: Aktiviteyi Güncelle
+        assign: Sürücü Ata
+        get-order: Sipariş Etiketi Al
+        split-order: Siparişi Böl
+        reschedule: Siparişi Yeniden Programla
+        cancel-order: Siparişi İptal Et
+
+      place-card:
+        show-less: Daha az detay göster
+        show-more: Daha fazla detay göster
+
+      schedule-card:
+        destination: Varış Noktası
+        unassign-driver: Sürücü Ataması Kaldırılsın mı?
+        unassign-text: "{orderId} numaralı Siparişin sürücü atamasını kaldırmak üzeresiniz. Sürücünün kaldırılmasını onaylamak için devam'a tıklayın."
+        unassign-button: Devam et ve sürücü atamasını kaldır
+        assign-driver: Yeni Sürücü Atansın mı?
+        assign-text: "{orderId} numaralı Siparişe yeni bir sürücü ({driverName}) atamak üzeresiniz. Sürücüyü onaylamak için devam'a tıklayın."
+        assign-button: Devam et ve sürücüyü ata
+        date: Programlanan tarih
+        driver-assigned: Sürücü
+        vehicle-assigned: Araç
+        no-driver: Sürücü Yok
+        no-vehicle: Araç Yok
+        select-driver: Sürücü Seç
+        select-vehicle: Araç Seç
+
+    widget:
+      fleet-ops-quickstart:
+        message: Operasyonları başlatmak için neler yapabileceğinize bakalım...
+        start-task: Göreve Başla
+
+      key-metrics:
+        title: Filo Operasyonları Metrikleri
+        earnings: Kazançlar
+        fuel-expenses: Yakıt Giderleri
+        traveled: Kat Edilen Mesafe
+        total-time: Toplam Süre
+        order-scheduled: Programlanan Siparişler
+        order-completed: Tamamlanan Siparişler
+        order-progress: Devam Eden Siparişler
+        order-canceled: İptal Edilen Siparişler
+        driver-online: Çevrimiçi Sürücüler
+        customers: Müşteriler
+        open-issue: Açık Sorunlar
+        closed-issues: Kapatılan Sorunlar
+
+      live-order-map:
+        loading: Devam eden siparişler yükleniyor...
+        assigned: Sürücü Atandı
+        no-order: Devam eden sipariş yok
+        message: Siparişler devam ederken bu widget'ta gerçek zamanlı aktivite gösterilecektir.
+
+      recent-orders:
+        title: Son Siparişler
+        loading: Son siparişler yükleniyor...
+        no-orders: Bu hafta için sipariş yok
+        message-part-1: Bu hafta hiç sipariş olmadı, hareketi başlatmak için
+        message-part-2: yeni bir sipariş oluşturun
+        message-part-3: veya müşterilerinizin API üzerinden sipariş vermesine izin verin.
+
+      transactions:
+        title: Son İşlemler
+        loading: Son işlemler yükleniyor...
+        no-transactions: Bu hafta işlem yok
+        message: Siparişler servis ücretleriyle devam ederken, Fleetbase işlemleri otomatik olarak takip eder.
+
+    contact-form-panel:
+      success-message: Kişi {contactName} başarıyla kaydedildi.
+      view-contact-button: Kişi detaylarını görüntüle
+      save-contact: Kişiyi Kaydet
+      create-contact: Kişi Oluştur
+      cancel-edit-button: Kişi düzenlemeyi iptal et
+      cancel-new-button: Yeni kişiyi iptal et
+      new-contact: Yeni Kişi
+      select-address: Adres Seç
+      edit: Düzenle
+      new-address: Yeni Adres
+      contact-details: Kişi Detayları
+    customer-form-panel:
+      success-message: Müşteri {customerName} başarıyla kaydedildi.
+      view-customer-button: Müşteri detaylarını görüntüle
+      save-customer: Müşteriyi Kaydet
+      create-customer: Müşteri Oluştur
+      cancel-edit-button: Müşteri düzenlemeyi iptal et
+      cancel-new-button: Yeni müşteriyi iptal et
+      new-customer: Yeni Müşteri
+      select-address: Adres Seç
+      edit: Düzenle
+      new-address: Yeni Adres
+      customer-details: Müşteri Detayları
+
+    contact-panel:
+      details:
+        web-url: Web Sitesi URL'si
+      edit-button: Kişiyi düzenle
+      cancel-edit-button: Kişi düzenlemeyi iptal et
+      cancel-new-button: Yeni kişiyi iptal et
+
+    customer-panel:
+      details:
+        web-url: Web Sitesi URL'si
+      edit-button: Müşteriyi düzenle
+      cancel-edit-button: Müşteri düzenlemeyi iptal et
+      cancel-new-button: Yeni müşteriyi iptal et
+
+    display-panel:
+      no-address: "{type} adresi yok!"
+      no-address-message: Adres yok!
+
+    driver-card:
+      no-fleets: Filo yok
+
+    driver-form-panel:
+      driver-details: Sürücü Detayları
+      user-account: Kullanıcı Hesabı
+      user-account-help-text: Her sürücü profili belirli bir kullanıcı hesabına bağlanmalıdır. Bu ilişki, her sürücünün profiline güvenli bir şekilde erişebilmesi ve yönetebilmesi için kimlik doğrulama sürecini yönetmek açısından önemlidir.
+      success-message: Sürücü ({driverName}) başarıyla kaydedildi.
+      driver-detail: Sürücü detaylarını görüntüle
+      save-driver: Sürücüyü Kaydet
+      create-driver: Sürücü Oluştur
+      cancel-edit-driver: Sürücü düzenlemeyi iptal et
+      cancel-new-driver: Yeni sürücüyü iptal et
+      upload-new-photo: Yeni fotoğraf yükle
+      new-driver: Yeni Sürücü
+      vendor: Tedarikçi
+      select-vehicle: Araç Seç
+      driver-status: Sürücü durumunu seç
+      order-history: Sipariş Geçmişi
+      select-user: Kullanıcı Seç
+
+    driver-panel:
+      user-account: Kullanıcı Hesabı
+      driver-details: Sürücü Detayları
+      locate-button-text: Sürücüyü bul
+      edit-button-text: Sürücüyü düzenle
+      close-button-text: Sürücü detaylarını kapat
+      no-vehicle-message: Atanmış araç yok
+      assign-vehicle-button: Sürücüye araç ata
+
+    fleet-driver-listing:
+      search-driver: Filodaki sürücüleri ara
+      add-driver: Filoya sürücü ekle
+      loading-message: Filo sürücüleri yükleniyor...
+
+    fleet-form-panel:
+      success-message: Filo ({fleetName}) başarıyla kaydedildi.
+      title: Yeni Filo
+      save-fleet: Filoyu Kaydet
+      create-fleet: Filo Oluştur
+      view-details: Filo detaylarını görüntüle
+      cancel-edit-fleet: Filo düzenlemeyi iptal et
+      cancel-new-fleet: Yeni filoyu iptal et
+      fleet-name: Filo Adı
+      parent-fleet: Üst Filo
+      select-parent-fleet: Filonun atanacağı üst filoyu seç
+      select-vendor: Filonun atanacağı tedarikçiyi seç
+      service-title: Hizmet Alanına Ata
+      select-service: Filonun atanacağı hizmet alanını seç
+      zone-title: Bölgeye Ata
+      select-zone: Filonun atanacağı bölgeyi seç
+      select-status-fleet: Filonun durumunu seç
+      select-status: Durum seç
+      task-mission-title: Görev/Misyon
+      task-text: Varsa bu filonun birincil görev veya misyonunun bir açıklamasını verin.
+    fleet-vehicle-listing:
+      search-vehicle: Filodaki araçları ara
+      add-vehicle: Filoya araç ekle
+      loading-message: Filo araçları yükleniyor...
+
+    fuel-report-form-panel:
+      success-message: Yakıt raporu başarıyla kaydedildi.
+      fuel-report: Yeni Yakıt Raporu
+      save-fuel-report: Yakıt Raporunu Kaydet
+      create-fuel-report: Yakıt Raporu Oluştur
+      view-details: Yakıt raporu detaylarını görüntüle
+      cancel-edit-fuel-report: Yakıt raporu düzenlemeyi iptal et
+      cancel-new-fuel-report: Yeni yakıt raporunu iptal et
+      select-reporter: Raporlayan Seç
+      select-driver: Sürücü Seç
+      select-vehicle: Araç Seç
+      select-fuel-report: Yakıt raporu durumunu seç
+      odometer: Kilometre Sayacı
+      cost: Maliyet
+      volume: Hacim
+      select-volume-text: Raporlanacak yakıtın metrik birimini ve hacmini seçin.
+
+    fuel-report-panel:
+      title: Yakıt Raporu Detayları
+      edit-button: Yakıt raporunu düzenle
+      cancel-edit-fuel-report: Yakıt raporu düzenlemeyi iptal et
+      cancel-new-fuel-report: Yeni yakıt raporunu iptal et
+      details: 
+        fuel: Yakıt/Hacim
+
+    global-search:
+      search: Anahtar kelimeyle ara...
+
+    integrated-order-details:
+      order-id: Sipariş ID
+      quotation-id: Teklif ID
+      driver-id: Sürücü ID
+      link: Paylaşılabilir Bağlantı
+      price-breakdown: Fiyat Dökümü
+      metadata: Meta Veriler
+
+    issue-form-panel:
+      success-message: Sorun ({publicId}) başarıyla kaydedildi.
+      issue: Yeni Sorun
+      save-issue: Sorunu Kaydet
+      create-issue: Sorun Oluştur
+      view-details: Sorun detaylarını görüntüle
+      cancel-edit-issue: Sorun düzenlemeyi iptal et
+      cancel-new-issue: Yeni sorunu iptal et
+      reported-by: Raporlayan
+      assigned: Atanan Kişi
+      select-assign: Atanacak Kişiyi Seç
+      select-reporter: Raporlayan Seç
+      select-driver: Sürücü Seç
+      select-vehicle: Araç Seç
+      type: Sorun Türü
+      select-type: Sorun türünü seç
+      category: Sorun Kategorisi
+      select-category: Sorun kategorisini seç
+      report: Sorun Raporu
+      tags: Sorun Etiketleri
+      add-tags: Etiket ekle
+      priority: Sorun Önceliği
+      select-priority: Sorun önceliğini seç
+      select-status: Sorun durumunu seç
+
+    issue-panel:
+      details:
+        assigned: Atanan Kişi
+        type: Sorun Türü
+        category: Sorun Kategorisi
+        priority: Sorun Önceliği
+        report: Rapor
+      title: Sorun Detayları
+      edit-issue: Sorunu Düzenle
+      cancel-edit-issue: Sorun düzenlemeyi iptal et
+      cancel-new-issue: Yeni sorunu iptal et
+    live-map:
+      onText: Çizim kontrollerini gizle...
+      offText: Çizim kontrollerini etkinleştir...
+      show-coordinates: Koordinatları göster...
+      center-map: Haritayı buraya ortala...
+      zoom-in: Yakınlaştır...
+      zoom-out: Uzaklaştır...
+      hide-draw: Çizim kontrollerini gizle...
+      enable-draw: Çizim kontrollerini etkinleştir...
+      create-new-service: Yeni Hizmet Alanı oluştur...
+      focus-service: 'Hizmet Alanına Odaklan: {serviceName}'
+      view-driver: 'Sürücüyü Görüntüle: {driverName}'
+      edit-driver: 'Sürücüyü Düzenle: {driverName}'
+      delete-driver: 'Sürücüyü Sil: {driverName}'
+      view-vehicle-for: 'Araç Görüntüle: {driverName}'
+      view-vehicle: 'Aracı görüntüle: {vehicleName}'
+      edit-vehicle: 'Aracı düzenle: {vehicleName}'
+      delete-vehicle: 'Aracı sil: {vehicleName}'
+      edit-zone: 'Bölgeyi düzenle: {zoneName}'
+      delete-zone: 'Bölgeyi sil: {zoneName}'
+      assign-zone: 'Bölgeye Filo Ata: {zoneName}'
+      blur-service: 'Hizmet Alanını Gizle: {serviceName}'
+      create-zone: 'İçinde Bölge Oluştur: {serviceName}'
+      assign-fleet: 'Hizmet Alanına Filo Ata: {serviceName}'
+      edit-service: 'Hizmet Alanını Düzenle: {serviceName}'
+      delete-service: 'Hizmet Alanını Sil: {serviceName}'
+      service-area: Hizmet Alanı
+      zone: Bölge
+
+    order-config:
+      create-new-title: Yeni bir sipariş yapılandırması oluştur
+      warning-message: Sipariş yapılandırması bir isim gerektirir
+      success-message: Yeni sipariş yapılandırması başarıyla oluşturuldu.
+      no-order-warning: Hiçbir sipariş yapılandırması seçilmedi.
+      saved-success: '{orderName} sipariş yapılandırması kaydedildi.'
+      enter-name-title: Kopyalanan yapılandırmanın adını girin
+      no-config-warning: Yapılandırma adı girilmedi.
+      cloned-success: Sipariş yapılandırması başarıyla kopyalandı.
+      body: Bu sipariş yapılandırması silindikten sonra artık bunu kullanarak sipariş oluşturamazsınız. Emin misiniz?
+      uninstall-title: Yapılandırmayı Kaldır
+      uninstall-success: Eklenti {extensionName} kaldırıldı.
+      activity-flow-editor:
+        add-status: Akışa yeni durum ekle
+        no-status: Durum girilmedi.
+        overwrite: Bu mevcut bir durumun üzerine yazacak!
+        overwrite-text: Bu akışta zaten var olan başka bir {statusName} durumu var, devam ederseniz bu durum öncekinin üzerine yazılacak. Önceki {statusName} durumunun üzerine yazmak istiyor musunuz?
+        overwrite-button: Evet, üzerine yaz!
+        remove: Durumu kaldır
+        remove-text: Bu durumu silmek istediğinizden emin misiniz? Durumla ilgili tüm aktiviteler ve mantık da silinecek.
+        delete-button: Evet, sil
+        unable-warning: "{status} bu sıra sırasında olmalıdır, kaydırılamaz."
+        order-warning: Oluşturulan durum her zaman bir sipariş akışının ilk sırası olmalıdır.
+        title: Aktivite Akışı
+        message: Aktivite akışı yapılandırması, bu sipariş türü için geçerli olan farklı takip durumu aktivitelerini tanımlamanıza olanak tanır. Aktivite akışının mantığı da yapılandırılabilir.
+        order-flow: Sipariş Akışı
+        waypoint-flow: Ara Nokta Akışı
+        new-activity: Yeni Aktivite
+        activity-details: Aktivite Detayları
+        logic-stack: Mantık Yığını
+        add-logic: Mantık koşulu ekle
+        select-field: Alan seç
+        select-operator: Operatör seç
+        enter-value: Karşılaştırılacak değeri girin
+        no-logic: Mantık koşulu uygulanmadı
+      details-editor:
+        success: Kuruldu
+        key-text: Bu yapılandırmayı kullanarak siparişi yapılandırmak için bu anahtarı sipariş türünüze iletin.
+        namespace-text: Bu eklenti için benzersiz ad alanı.
+        id: Eklenti ID
+        id-text: Bu eklenti için benzersiz ID.
+        version: Eklenti Versiyonu
+        version-text: Bu eklentinin versiyonu.
+        clone: Yapılandırmayı Kopyala
+        uninstall: Yapılandırmayı Kaldır
+        delete: Yapılandırmayı Sil
+
+      entities-editor:
+        warning-message: Meta alan anahtar adı girilmedi.
+        title: Varlıklar
+        message: Varlık yapılandırması, bu sipariş türü için seçilebilir olması gereken farklı varlık türlerini tanımlamanıza olanak tanır. Bunlar, manuel sipariş oluşturmayı hızlandırmak için şablon gibi kullanılmalıdır.
+        type: Varlık Türü
+        add-meta: Meta alan ekle
+
+      fields-editor:
+        text-field: Metin Alanı
+        boolean: Mantıksal
+        boolean-text: Kullanıcının onay kutusuyla doğru veya yanlış bir özelliği değiştirmesine olanak tanır
+        dropdown: Açılır Liste
+        dropdown-text: Kullanıcının seçenekler listesinden bir seçenek seçmesine olanak tanır
+        datetime: Tarih/Saat Seçici
+        datetime-text: Kullanıcının bir tarih ve saat seçmesine olanak tanır
+        port: Liman Seçici
+        port-text: Kullanıcının bir liman seçmesine olanak tanır
+        vessel: Gemi Seçici
+        vessel-text: Kullanıcının bir gemi seçmesine olanak tanır
+        warning-message: Grup adı girilmedi.
+        field-title: Meta Alanlar
+        new-field: Yeni Özel Alan
+        new-custom-field: Yeni Özel Alan Grubu
+        field-text: Meta alan yapılandırması, siparişlere uygulanacak özel giriş alanları tanımlamanıza olanak tanır.
+        custom-field-group: Özel Alan Grubu
+        default-field: Varsayılan Alanlar
+        custom-field: Özel Alan
+        type: Alan Türü
+        select-type: Alan türünü seç
+        add-option: Seçenek Ekle
+
+      select-message: Değiştirmek için bir sipariş yapılandırması seçin veya yeni bir sipariş yapılandırması oluşturmak için "Yeni Yapılandırma"ya tıklayın.
+      new-config: Yeni Yapılandırma
+      loading-configuration: Sipariş yapılandırmalarınız yükleniyor...
+      select-order: Sipariş yapılandırması seç
+      save-changes: Değişiklikleri Kaydet
+      details: Detaylar
+      fields: Özel Alanlar
+      flow: Aktivite Akışı
+      entities: Varlıklar
+    order-list-overlay:
+      search: Siparişleri ara...
+      selected: Seçildi
+      assign: Sürücüye ata...
+      cancel: Siparişleri iptal et...
+      delete: Siparişleri sil...
+      actions: İşlemler
+      create-order: Yeni sipariş oluştur...
+      create-fleet: Yeni filo oluştur...
+      active-orders: Aktif Siparişler
+      unassigned-orders: Atanmamış Siparişler
+
+    place-form-panel:
+      success-message: yer ({placeAddress}) başarıyla kaydedildi.
+      place: Yeni Yer
+      save-place: Yeri Kaydet
+      create-place: Yer Oluştur
+      view-details: Yer detaylarını görüntüle
+      cancel-edit-place: Yer düzenlemeyi iptal et
+      cancel-new-place: Yeni yeri iptal et
+      street-1: Sokak 1
+      street-2: Sokak 2
+      neighborhood: Mahalle
+      building: Bina
+      security-code: Güvenlik Erişim Kodu
+      postal-code: Posta Kodu
+      state: İl/Eyalet
+
+    place-panel:
+      edit-place: Yeri düzenle
+      cancel-edit-place: Yer düzenlemeyi iptal et
+      cancel-new-place: Yeni yeri iptal et
+
+    route-list:
+      expand: Genişletmek için dokun
+      collapse: Daraltmak için dokun
+      more-waypoints: daha fazla ara nokta
+
+    settings-window:
+      success-message: Ayarlar başarıyla kaydedildi.
+      title: FleetOps Ayarları
+      save: Değişiklikleri Kaydet
+      name: Varsayılan Adhoc Ping Mesafesi
+      name-text: Bu ayar, adhoc siparişlerin sipariş alım noktası çevresindeki sürücüleri ping'lemesi gereken varsayılan mesafeyi metre cinsinden belirler.
+      message: Mesafe metre cinsinden olmalıdır
+
+    vehicle-form-panel:
+      success-message: Araç ({vehicleName}) başarıyla kaydedildi.
+      view-details: Araç detaylarını görüntüle
+      save-vehicle: Aracı Kaydet
+      create-vehicle: Araç Oluştur
+      cancel-edit-vehicle: Araç düzenlemeyi iptal et
+      cancel-new-vehicle: Yeni aracı iptal et
+      upload-photo: Yeni fotoğraf yükle
+      new-vehicle: Yeni Araç
+      not-assigned: Sürücü atanmadı
+      plate-number: Plaka Numarası
+      vin-number: VIN Numarası
+      make: Marka
+      vehicle-make: Araç markası
+      model: Model
+      vehicle-model: Araç modeli
+      year: Yıl
+      vehicle-year: Araç yılı
+      driver-assigned: Atanan Sürücü
+      vehicle-assigned: Atanan Araç
+      select-driver: Sürücü Seç
+      select-vehicle: Araç Seç
+      avatar: Avatar
+      select-map-avatar: Harita avatarı seç
+      select-avatar-rendering: Konum takibi özelliklerini kullanırken haritalarda gösterilecek bir avatar seçin.
+      select-avatar: Avatar seç
+
+    vehicle-panel:
+      edit: Aracı düzenle
+      close: Araç detaylarını kapat
+      not-assigned: Sürücü atanmadı
+      assign-driver: Araca sürücü ata
+
+    vendor-form-panel:
+      success-message: Tedarikçi ({vendorName}) başarıyla kaydedildi.
+  
+  management:
+    contacts:
+      index:
+        delete-button: Kişileri Sil
+        updated: Güncellenme Tarihi
+        created: Oluşturulma Tarihi
+        view-contact: Kişi Detaylarını Görüntüle
+        edit-contact: Kişiyi Düzenle
+        delete-contact: Kişiyi Sil
+        edit:
+          title: Kaydetmeden Devam Edilsin mi?
+          body: Bu kişiye yapılan kaydedilmemiş değişiklikler kaybolacak. Devam etmek için tıklayın.
+          button: Kaydetmeden devam et
+        title: Kişiler
+        delete-contacts: Kişileri Sil
+
+      customers:
+        delete-button: Müşterileri Sil
+        updated: Güncellenme Tarihi
+        created: Oluşturulma Tarihi
+        view-customer: Müşteri Detaylarını Görüntüle
+        edit-customer: Müşteriyi Düzenle
+        delete-customer: Müşteriyi Sil
+        edit:
+          title: Kaydetmeden Devam Edilsin mi?
+          body: Bu müşteriye yapılan kaydedilmemiş değişiklikler kaybolacak. Devam etmek için tıklayın.
+          button: Kaydetmeden devam et
+        title: Müşteriler
+        delete-customers: Müşterileri Sil
+
+    drivers:
+      index:
+        assign-driver: Sürücü Ata
+        view-details: Sürücü detaylarını görüntüle...
+        edit-details: Sürücü detaylarını düzenle...
+        assign-order-driver: Sürücüye sipariş ata...
+        assign-vehicle-driver: Sürücüye araç ata...
+        locate-driver-map: Sürücüyü haritada bul...
+        delete-driver: Sürücüyü sil...
+        delete-button: Sürücüleri Sil
+        order-driver: Bu Sürücüye Sipariş Ata
+        assign-order: Sipariş Ata
+        no-order-warning: Sipariş seçilmedi!
+        assign-success: '{driverName} siparişe atandı.'
+        title-vehicle: Bu Sürücüye Araç Ata
+        confirm-button: Onayla ve Oluştur
+        assign-vehicle: '{driverName} araca atandı.'
+        locate-driver: '{driverName} Mevcut Konumu'
+        edit:
+          title: Kaydetmeden Devam Edilsin mi?
+          body: Bu sürücüye yapılan kaydedilmemiş değişiklikler kaybolacak. Devam etmek için tıklayın.
+          button: Kaydetmeden devam et
+        title: Sürücüler
+        delete-drivers: Sürücüleri Sil
+        search-placeholder: Sürücüleri Ara
+
+      new:
+         warning-message: Yüklenecek dosya kuyruğunda dosya yok!
+         import-success: İçe aktarma tamamlandı.
+
+    fleets:
+      index:
+        view-fleet: Filo detaylarını görüntüle...
+        edit-fleet: Filo detaylarını düzenle...
+        assign-driver: Filoya sürücü ata...
+        delete-fleet: Filoyu sil...
+        delete-button: Filoları Sil
+        edit:
+          body: Bu filoya yapılan kaydedilmemiş değişiklikler kaybolacak. Devam etmek için tıklayın.
+        title: Filolar
+        delete-fleets: Filoları Sil
+    
+    fuel-reports:
+      index:
+        view: Detayları Görüntüle
+        edit-fuel: Yakıt Raporunu Düzenle
+        delete: Yakıt Raporunu Sil
+        delete-button: Yakıt Raporlarını Sil
+        edit:
+          body: Bu yakıt raporuna yapılan kaydedilmemiş değişiklikler kaybolacak. Devam etmek için tıklayın.
+        title: Yakıt Raporları
+        delete-fuel-reports: Yakıt Raporlarını Sil
+
+    issues:
+      index:
+        view: Detayları Görüntüle
+        edit-issues: Sorunları Düzenle
+        delete: Sorunları Sil
+        delete-button: Sorunları Sil
+        edit:
+          body: Bu soruna yapılan kaydedilmemiş değişiklikler kaybolacak. Devam etmek için tıklayın.
+        title: Sorunlar
+        delete-issues: Sorunları Sil
+
+    places:
+      index:
+        view-details: Yer Detaylarını Görüntüle
+        edit-place: Yeri Düzenle
+        view-place: Yeri Haritada Görüntüle
+        delete: Yeri Sil
+        title: Bu Yeri Bir Tedarikçiye Ata
+        confirm-button: Onayla ve Oluştur
+        delete-button: Yerleri Sil
+        success-message: '{placeName} detayları güncellendi.'
+        locate-title: '{placeName} Konumu'
+        edit:
+          body: Bu yere yapılan kaydedilmemiş değişiklikler kaybolacak. Devam etmek için tıklayın.
+        places-title: Yerler
+        delete-places: Yerleri Sil
+
+    vehicles:
+      index:
+        view-vehicle: Araç detaylarını görüntüle...
+        edit-vehicle: Araç detaylarını düzenle...
+        delete-vehicle: Aracı sil...
+        delete-button: Araçları Sil
+        locate-action-title: Araçları Bul
+        locate-title: '{vehicleName} Mevcut Konumu'
+        edit:
+          body: Bu araca yapılan kaydedilmemiş değişiklikler kaybolacak. Devam etmek için tıklayın.
+        title: Araçlar
+        delete-vehicles: Araçları Sil
+
+    vendors:
+      index:
+        delete-button: Tedarikçileri Sil
+        view-vendor: Tedarikçi Detaylarını Görüntüle
+        edit-vendor: Tedarikçiyi Düzenle
+        delete-vendor: Tedarikçiyi Sil
+        edit:
+          body: Bu tedarikçiye yapılan kaydedilmemiş değişiklikler kaybolacak. Devam etmek için tıklayın.
+        title: Tedarikçiler
+        delete-vendors: Tedarikçileri Sil
+
+  operations:
+    order-config:
+      route-loading-message: Sipariş Yapılandırma Oluşturucu Yükleniyor
+    orders:
+      index:
+        payload: Yük
+        customer: Müşteri
+        facilitator: Kolaylaştırıcı
+        pickup: Alım
+        dropoff: Teslimat
+        scheduled-at: Programlanma Tarihi
+        items: Öğeler
+        transaction: İşlem Toplamı
+        tracking: Takip Numarası
+        driver-assigned: Sürücü
+        vehicle-assigned: Araç
+        created-by: Oluşturan
+        updated-by: Güncelleyen
+        view-order: Siparişi Görüntüle
+        cancel-order: Siparişi İptal Et
+        delete-order: Siparişi Sil
+        dispatch-order: Siparişi Sevk Et
+        cancel-title: Bu siparişi iptal etmek istediğinizden emin misiniz?
+        cancel-body: Bu sipariş iptal edildikten sonra, sipariş kaydı hala görünür olacak ancak bu siparişe aktivite eklenemeyecek.
+        cancel-success: Sipariş {orderId} iptal edildi.
+        dispatch-title: Bu siparişi sevk etmek istediğinizden emin misiniz?
+        dispatch-body: Bu sipariş sevk edildikten sonra atanan sürücüye bildirim gönderilecek.
+        dispatch-success: Sipariş {orderId} sevk edildi.
+        map: Harita
+        table: Tablo
+        cancel-orders: Siparişleri İptal Et
+        delete-orders: Siparişleri Sil
+        new:
+          create-new-customer: Yeni müşteri oluştur
+          create-new-facilitator: Yeni kolaylaştırıcı oluştur
+          create-new-place: Yeni yer oluştur
+          add-order: Siparişe varlık ekle
+          edit-order: Sipariş meta verilerini düzenle
+          add-field: Özel alan ekle
+          order-type: Sipariş Türü
+          order-type-help-text: Sipariş türünü seçmek Fleetbase'e hangi sipariş yapılandırmalarını kullanacağını söyleyecektir.
+          order-type-placeholder: Sipariş Türü Seç
+          internal-id: Dahili ID
+          internal-id-help-text: Sipariş için isteğe bağlı olarak özel bir tanımlayıcı veya dahili tanımlayıcı ayarlamak için bu alanı kullanın.
+          schedule: Program
+          schedule-help-text: Siparişin sevk edileceği tarih ve saat. Sevk zamanında sürücü atanmamışsa, sevkiyat başarısız olur. Sipariş Ad-Hoc ise, sipariş alım noktası çevresindeki sürücülere bildirilecektir.
+          customer: Müşteri
+          customer-help-text: İsteğe bağlı olarak bu siparişin müşterisini atayın. Yeni bir müşteriyse, yukarıdaki 'Yeni Müşteri' düğmesini kullanın.
+          customer-placeholder: Müşteri Seç
+          facilitator: Kolaylaştırıcı
+          facilitator-help-text: İsteğe bağlı olarak bu sipariş için bir kolaylaştırıcı atayın, kolaylaştırıcı bu siparişin taşınmasını kolaylaştıracak bir 3. taraf yüklenici veya hizmet olabilir.
+          facilitator-placeholder: Kolaylaştırıcı Seç
+          service-type: Hizmet Türü
+          service-type-placeholder: Hizmet Türü Seç
+          service-type-help-text: Kullanmak istediğiniz hizmet türünü seçin
+          assign-driver: Sürücü Ata
+          assign-driver-help-text: Bu siparişin sevk edileceği sürücüyü atayın.
+          assign-driver-placeholder: Sürücü Seç
+          assign-vehicle: Araç Ata
+          assign-vehicle-help-text: Bu siparişin gerçekleştirileceği aracı atayın.
+          assign-vehicle-placeholder: Araç Seç
+          proof-delivery: Teslimat Kanıtı
+          proof-delivery-help-text: Gerekli teslimat kanıtı türünü seçin. Bu ya QR kod taraması ya da İmza yöntemi olabilir.
+          proof-delivery-placeholder: Teslimat Kanıtı Yöntemi Seç
+          adhoc-ping: Adhoc Ping Mesafesi
+          adhoc-ping-help-text: Bu ayar, bu sipariş için ping mesafesini belirler, ayarlanmazsa varsayılan ayara geri döner.
+          adhoc-ping-message: Mesafe metre cinsinden olmalıdır
+          ad-hoc: Ad-Hoc
+          ad-hoc-help-text: Ad-Hoc'u etkinleştirmek, siparişin sipariş alım noktası çevresindeki sürücülere akıllıca ping göndermesini sağlayarak ilk müsait sürücünün siparişi kabul etmesine olanak tanır. Bu, gerçek zamanlı siparişler için manuel sürücü atamasına bir alternatiftir.
+          dispatch: Hemen Sevk Et
+          dispatch-help-text: Sevk etmeyi etkinleştirmek bu siparişi oluşturulduktan hemen sonra sevk edecektir.
+          require-proof: Teslimat Kanıtı Gerekli
+          require-proof-help-text: Bunu etkinleştirmek sürücünün bir teslimat kanıtı tamamlamasını gerektirecektir.
+          additional-details: Ek Detaylar
+          metadata: Meta Veriler
+          route: Rota
+          route-label: Çoklu Teslimat Noktaları
+          optimize-route: Rotayı Optimize Et
+          optimize-route-help-text: Fleetbase rotayı otomatik olarak optimize edecektir.
+          add-waypoint: Ara Nokta Ekle
+          add-waypoint-help-text: Bu sipariş için daha fazla durak eklemek için 'Ara Nokta Ekle' düğmesini kullanın. Fleetbase rota motoru, her durak eklendiğinde veya kaldırıldığında rotayı otomatik olarak optimize edecektir.
+          select-waypoint-placeholder: Ara Nokta Seç
+          infoblock-text: bu konumu destekleyemiyor.
+          invalid-coordinates: Geçersiz koordinatlar!
+          pickup: Alım
+          select-pickup: Alım Noktası Seç
+          dropoff: Teslimat
+          select-dropoff: Teslimat Noktası Seç
+          return: Dönüş
+          edit-address: Adresi Düzenle
+          select-return: Dönüş Noktası Seç
+          payload-entities: Yük / Varlıklar
+          add-item-order: Siparişe Öğe Ekle
+          items-drop: Öğeler şurada bırakılır
+          add-item-button: Öğe Ekle
+          add-entity: Varlık Ekle
+          sku: SKU
+          select-destination: Varış Noktası Seç
+          edit-item: Öğeyi Düzenle
+          apply-service-rate: Hizmet ücreti uygula
+          service-help-text: Bu siparişe uygulanacak gerçek zamanlı hizmet teklifleri oluşturmak için tanımlanmış bir hizmet ücreti seçin.
+          service-quotes: Hizmet Teklifleri
+          service-quotes-help-text: Hangi hizmet ücreti için teklif alınacağını seçin.
+          select-service-rate: Hizmet Ücreti Seç
+          refresh-button: Yenile
+          loading-message: Hizmet teklifleri yükleniyor...
+          info-text: Bu siparişe uygulanacak gerçek zamanlı bir hizmet teklifi seçin. Bir teklif siparişe uygulandığında, satın alınmış bir ücret haline gelecektir. İşlemler Fleetbase defterinde takip edilecektir.
+          breakdown: Döküm
+          no-service-info-text: Hizmet teklifi yok.
+          input-order-info-text: Hizmet tekliflerini görüntülemek için sipariş rotasını girin.
+          notes-title: Notlar
+          notes-placeholder: Sipariş notlarını buraya girin...
+          success-message: Yeni Sipariş {orderId} Oluşturuldu
+          warning-message: Yüklenecek dosya kuyruğunda dosya yok!
+          import-success: İçe aktarma tamamlandı.
+          service-warning: Bu sipariş için hizmet teklifleri alınamadı.
+          no-route-warning: Önizlenecek rota yok.
+          route-error: Rota optimizasyonu başarısız oldu, rota girişini kontrol edin ve tekrar deneyin.
+          custom-field-title: Siparişe özel alan ekle
+          label-warning: Özel alan bir etikete sahip olmalıdır
+          value-warning: Özel alan bir değere sahip olmalıdır
+          edit-field-title: Özel alanı düzenle
+          edit-metadata: Meta Verileri Düzenle
+          input-field-required: "{inputFieldName} alanı zorunludur."
+        view:
+          purchase-rate-panel-title: Satın Alma Ücreti
+          documents-panel-title: Belgeler ve Dosyalar
+          route-panel-title: Rota
+          currency: Para Birimi
+          comments-title: Yorumlar
+          notes-title: Notlar
+          dispatch: Sevk Et
+          order-actions: Sipariş İşlemleri
+          edit-details: Detayları Düzenle
+          update-activity: Aktiviteyi Güncelle
+          unassign-driver: Sürücü Atamasını Kaldır
+          assign-driver: Sürücü Ata
+          get-order-label: Sipariş Etiketi Al
+          listen-socket-channel: Soket kanalını dinle
+          view-metadata: Meta verileri görüntüle
+          cancel-order: Siparişi İptal Et
+          delete-order: Siparişi Sil
+          activity: Aktivite
+          unable-load-order-activity: Sipariş aktivitesi yüklenemedi.
+          no-order-activity: Henüz sipariş aktivitesi yok.
+          ad-hoc: Ad-Hoc
+          customer: Müşteri
+          facilitator: Kolaylaştırıcı
+          driver-assigned: Atanan Sürücü
+          vehicle-assigned: Atanan Araç
+          change-driver: Sürücüyü Değiştir
+          tracking-number: Takip Numarası
+          date-scheduled: Programlanma Tarihi
+          date-dispatched: Sevk Tarihi
+          date-started: Başlangıç Tarihi
+          order-details-title: Sipariş Detayları
+          additional-details-title: Ek Detaylar
+          route: Rota
+          pickup: Alım
+          dropoff: Teslimat
+          return: Dönüş
+          order-summary: Sipariş Özeti
+          subtotal: Ara Toplam
+          delivery-fee: Teslimat Ücreti
+          tip: Bahşiş
+          delivery-tip: Teslimat Bahşişi
+          total: Toplam
+          payload: Yük
+          items-drop: Öğeler şurada bırakılır
+          tracking: Takip
+          waypoint-actions: Ara Nokta İşlemleri
+          get-label: Etiket Al
+          view-activity: Aktiviteyi Görüntüle
+          add-item-button: Öğe Ekle
+          edit-item-button: Öğeyi Düzenle
+          edit-order-title: Sipariş Detaylarını Düzenle
+          update-success: '{orderId} detayları güncellendi.'
+          order-metadata: Sipariş Meta Verileri
+          unassign-title: Sürücüyü ({driverName}) bu siparişten çıkarmak istediğinizden emin misiniz?
+          unassign-body: Sürücü çıkarıldıktan sonra, sürücü artık bu siparişin detaylarına erişemeyecek.
+          unassign-success: Sürücü bu siparişten çıkarıldı.
+          edit-route-title: Sipariş Rotasını Düzenle
+          route-error: Rota optimizasyonu başarısız oldu, rota girişini kontrol edin ve tekrar deneyin.
+          route-update-success: '{orderId} rota detayları güncellendi.'
+          add-activity-title: Siparişe yeni aktivite ekle
+          invalid-warning: Geçersiz özel durum girişi.
+          change-order: Sipariş sürücüsünü değiştir
+          assign-order: Siparişe sürücü ata
+          assign-success: '{orderId} sürücü ataması güncellendi.'
+          order-title: Sipariş Etiketi
+          waypoint-title: Ara Nokta Etiketi
+          proof-of-delivery: Teslimat Kanıtı
+          notes-placeholder: Sipariş notlarını buraya girin...
+          save-order-note: Sipariş Notunu Kaydet
+          order-notes-updated: Sipariş notları güncellendi.
+        config:
+          title: Sipariş Yapılandırmaları
+          message: Sipariş yapılandırmaları, farklı sipariş türlerinin nasıl yürütülmesi gerektiğini Fleetbase'e söyleyecek dinamik yapılandırmalar tanımlamanıza olanak tanır.
+          configuration: Yapılandırma
+          types:
+            no-order-installed: Hiç sipariş yapılandırması yüklü değil!
+            you-have-no-configs: Şu anda yüklü sipariş yapılandırmanız yok, başlamak için eklentilerden bir sipariş yapılandırması yükleyin.
+            view-extensions: Eklentileri görüntüle
+
+    scheduler:
+      index:
+        success-message: Sipariş {orderId} {orderAt} tarihine programlandı.
+        info-message: Sipariş {orderId} programı iptal edildi.
+        title: Programlayıcı
+        unscheduled-orders: Programlanmamış Siparişler
+        scheduled-orders: Programlanmış Siparişler
+        unauthorized-to-schedule: Siparişleri programlama yetkiniz yok.
+
+    service-rates:
+      index:
+        edit-service: Hizmet Ücretini Düzenle
+        delete-service: Hizmet Ücretini Sil
+        accept-button: Hizmetleri Sil
+        edit:
+          success-message: Hizmet ücreti {serviceName} güncellendi
+        title: Hizmet Ücretleri
+        reload-data: Verileri yenile
+        delete-service-rates: Hizmet Ücretlerini Sil
+        new:
+          success-message: Yeni Hizmet Ücreti {serviceName} Oluşturuldu
+          new-service-rate-title: Yeni hizmet ücreti
+          save-service-button: Hizmet Ücretini Kaydet
+          create-service-button: Hizmet Ücreti Oluştur
+          service-name: Hizmet Adı
+          service-name-help-text: Bu hizmet için görüntüleme adı.
+          service-order-label: Hizmet Sipariş Türü
+          service-order-help-text: Bu hizmet ücretinin özel olarak uygulanacağı bir sipariş yapılandırması seçin. Bu, yalnızca seçilen sipariş yapılandırmasıyla oluşturulan siparişlerin bu özel hizmet ücretini kullanabilmesini sağlar.
+          service-order-placeholder: Hizmeti kısıtlamak için sipariş türü seçin
+          base-fee-label: Temel Ücret
+          base-fee-help-text: Bu hizmet için minimum maliyeti temsil eden bir temel ücret belirleyin.
+          rate-calculation-label: Ücret Hesaplama Yöntemi
+          rate-calculation-help-text: Bu hizmetin sorgulandığında ücretleri hesaplamak için kullanacağı yöntem.
+          rate-calculation-placeholder: Ücret hesaplama yöntemi seçin
+          estimated-days: Tahmini Teslimat Günleri
+          estimated-days-help-text: Bu hizmetin kaç gün süreceğinin tahmini. Aynı gün teslimat için '0' kullanın.
+          duration-terms-label: Süre Koşulları
+          duration-terms-help-text: Bu hizmet ücreti için süreyle ilgili ek hizmet koşulları ekleyin.
+          duration-terms-placeholder: Varsa süre koşulları
+          fixed-meter: Sabit Metre Seçenekleri
+          fixed-meter-text: Bu seçenek kilometre başına sabit bir ücret tanımlar.
+          fixed-meter-example-text: >-
+            Örneğin: Her 1 kilometre için sabit bir ücret tanımlanır. Siparişin kat ettiği mesafe 3.300 metre ise, 3. kilometre için sabit ücret temel ücretin toplamına eklenir.
+          maximum-distance: Maksimum Mesafe
+          maximum-distance-help-text: Hizmet verilebilecek maksimum mesafe.
+          distance: Mesafe
+          fee: Ücret
+          per-drop-off-title: Teslimat Başına Seçenekler
+          per-drop-off-text: Bu seçenek teslimat başına sabit bir ücret tanımlar.
+          per-drop-off-example-text: >-
+            Örneğin: Siparişteki 1-5 teslimat $x tutarında, sipariş başına 5-10 teslimat $x tutarında olacaktır. Bu, temel ücretin toplamına eklenecektir.
+          add-drop-off-button: Teslimat aralığı ekle
+          min-drop: Min Teslimat
+          max-drop: Max Teslimat
+          min: Min
+          max: Max
+          per-meter: Metre Başına
+          per-meter-text: Bu seçenek, hizmetin kilometre veya metre başına hesaplanmasına olanak tanır, yani mesafe ile çarpılacak sabit bir ücret tanımlarsınız ve bu mesafe metre veya kilometre olabilir.
+          per-meter-example-text: >-
+            Örneğin: '{fee}' * '{distance}' + '{baseFee}'
+          per-meter-rate-fee: Metre Başına Sabit Ücret
+          per-meter-rate-fee-help-text: Mesafe ile çarpılacak tek sabit ücret.
+          distance-unit: Mesafe Birimi
+          distance-unit-help-text: Mesafe birimi kilometre veya metre başına olabilir.
+          distance-unit-placeholder: Mesafe birimi seçin.
+          custom-algorithm-title: Özel Algoritma
+          custom-algorithm-info-message: Bu seçenek, bu hizmetin ücretini değişkenlerle özel bir hesaplama tanımlamak içindir.
+          custom-algorithm-info-second-message: Değişkenlerin tek süslü parantez içine alınması gerektiğini unutmayın.
+          distance-message: mesafe
+          distance-continue-message: >- 
+            - sipariş rotasından mesafe (metre cinsinden).
+          time-message: süre
+          time-continue-message: >-
+            - rota ETA'sı (saniye cinsinden).
+          example: Örnek
+          example-message: Sipariş talebi 2.200 metre mesafe ve 30 dakika ETA ile olursa.
+          example-second-message: O zaman aşağıdaki formül \$2.50'lık bir hizmet ücreti hesaplayacak ve bu temel ücrete eklenecektir.
+          algorithm-label: Algoritma
+          algorithm-help-text: Bu hizmet ücreti hesaplaması için değerlendirilecek bir formül tanımlayın.
+          algorithm-placeholder: >-
+            (( '{distance}' / 50 ) * .05 ) + (( '{time}' / 60 ) * .01)
+          percel-fee-title: Kargo Ücretleri
+          length-label: Uzunluk
+          length-placeholder: Uzunluk ({parcelFeeDimension} cinsinden)
+          width-label: Genişlik
+          width-placeholder: Genişlik ({parcelFeeDimension} cinsinden)
+          height-label: Yükseklik
+          height-placeholder: Yükseklik ({parcelFeeDimension} cinsinden)
+          weight-label: Ağırlık
+          weight-placeholder: Ağırlık ({parcelFeeWeight} cinsinden)
+          deminsions-unit: Boyut Birimi
+          select-unit-placeholder: Birim seç
+          weight-unit: Ağırlık Birimi
+          additional-fee: Ek Ücret
+          cash-delivery-title: Kapıda Ödeme
+          cash-delivery-label: "'Kapıda ödeme' siparişleri için ek ücret etkinleştirilsin mi?"
+          calculation-method-label: Kapıda Ödeme Ücreti Hesaplama Yöntemi
+          calculation-method-help-text: Kapıda ödeme ücretini hesaplamak için kullanılan yöntem.
+          calculation-method-placeholder: Kapıda ödeme ücreti hesaplama yöntemi seçin
+          delivery-flat-fee: Kapıda Ödeme Sabit Ücreti
+          delivery-flat-fee-help-text: Yoğun saatlerde eklenecek sabit bir ücret tanımlar.
+          fee-percentage: Kapıda Ödeme Ücret Yüzdesi
+          fee-percentage-help-text: Hizmet ücreti ara toplamından kapıda ödeme ücreti olarak eklenecek yüzde bazlı ücret tanımlar.
+          percentage-placeholder: Yüzde
+          peak-hours-title: Yoğun Saatler
+          peak-hours-label: Hizmet tarafından tanımlanan 'yoğun saatlerde' yapılan siparişler için ek ücret etkinleştirilsin mi?
+          peak-hours-start-label: Yoğun Saat Başlangıcı
+          peak-hours-start-help-text: Yoğun saat ücretinin ne zaman başlayacağını tanımlar.
+          peak-hours-end-label: Yoğun Saat Bitişi
+          peak-hours-end-help-text: Yoğun saat ücretinin ne zaman biteceğini tanımlar.
+          peak-hours-fee-label: Yoğun Saat Ücreti Hesaplama Yöntemi
+          peak-hours-fee-help-text: Yoğun saat ücretini hesaplamak için kullanılan yöntem.
+          peak-hours-fee-placeholder: Yoğun saat ücreti hesaplama yöntemi seçin
+          flat-fee-label: Yoğun Saat Sabit Ücreti
+          flat-fee-help-text: Yoğun saatlerde eklenecek sabit bir ücret tanımlar.
+          peak-hours-percentage-label: Yoğun Saat Ücret Yüzdesi
+          peak-hours-percentage-help-text: Yoğun saatlerde eklenecek hizmet ücreti ara toplamından yüzde bazlı ücret tanımlar.
+          restrict-service-title: Hizmeti Kısıtla
+          service-area-label: Hizmet Alanı
+          service-area-help-text: Bu hizmeti bir hizmet alanından kaynaklanan sipariş talepleriyle kısıtlayın.
+          service-area-placeholder: Hizmet alanına kısıtla
+          zone-label: Bölge
+          zone-help-text: Bu hizmeti belirli bir bölgeden kaynaklanan sipariş talepleriyle kısıtlayın.
+          zone-placeholder: Bölgeye kısıtla
+
+  settings:
+    navigator-app:
+      navigator-app-settings: Navigator Uygulama Ayarları
+
+    payments:
+      payments: Ödemeler
+      payment-settings: Ödeme Ayarları
